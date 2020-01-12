@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+// 注册 登录 获取数据
+Route::post('/api/user/reg','User\UserController@reg');
+Route::post('/api/user/login','User\UserController@login');
+Route::get('/api/show/time','User\UserController@showTime');
