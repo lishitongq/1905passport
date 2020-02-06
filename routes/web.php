@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::post('/api/user/reg','User\UserController@reg');
 Route::post('/api/user/login','User\UserController@login');
 Route::get('/api/show/time','User\UserController@showTime');
+
+Route::post('/api/auth','User\UserController@auth'); // 鉴权
+Route::get('/test/check','TestController@md5test');     //注册
