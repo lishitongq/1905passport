@@ -21,3 +21,4 @@ Route::get('/api/show/time','User\UserController@showTime');
 
 Route::post('/api/auth','User\UserController@auth'); // 鉴权
 Route::get('/test/check','TestController@md5test');     //注册
+Route::post('/test/check2','TestController@check2'); 	// 签名
